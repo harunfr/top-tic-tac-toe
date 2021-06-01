@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  /* display: flex; */
+  position: relative;
+}
+.score-board {
+  position: absolute;
+  top: -15vh;
+  height: 10vh;
+  width: 30vw;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-container {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
+  /* cursor: pointer; */
+  /* pointer-events: none; */
+}
+.section-container.end {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
+  /* cursor: pointer; */
+  pointer-events: none;
+}
+.section {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 1px; */
+  cursor: pointer;
+}
+
+.section.player1 {
+  background-color: lightgreen;
+  pointer-events: none;
+}
+.section.player2 {
+  background-color: lightsalmon;
+  pointer-events: none;
+}
